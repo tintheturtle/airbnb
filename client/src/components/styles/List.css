@@ -1,3 +1,12 @@
  .listings-title { 
     padding-top: 50px
 }
+
+
+#bootstrap {
+    padding: 0
+}
+
+.listing-section {
+    padding: 10% 10% 10% 10%
+}

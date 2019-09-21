@@ -3,6 +3,8 @@ import { getList, addToList } from './ListFunctions'
 import { updateItem} from './UserFunction'
 import  jwt_decode from 'jwt-decode'
 
+import {Jumbotron, Container} from 'react-bootstrap'
+
 import './styles/List.css'
 
 
@@ -86,34 +88,46 @@ class List extends Component {
 
     render () {
         return (
-            <div className="col-md-12">
-                <h1 className="listings-title">Available Properties</h1> 
+            <div id="bootstrap" className="list-section col-md-12">
+                <div id="container-two">
+                    <Jumbotron fluid id="tron">
+                        <Container>
+                            <h1>Available Properties</h1>
+                            <p>
+                                Explore what properties are available for rent!
+                            </p>
+                        </Container>
+                    </Jumbotron>
+            </div>
+            <div className="listing-section">
                 <table className="table">
-                    <tbody>
-                        {this.state.items.map((item, index) => (
-                            <tr key={index}>
-                                <td className="text-left">{item[0]}</td>
-                                <td className="text-left">{item[2]}</td>
-                                <td className="text-left">{item[3]}</td>
-                                <td className="text-right">
-                                    <button
-                                        className="btn btn-info mr-1"
-                                        disabled={this.state.editDisabled}
-                                        onClick={this.onEdit.bind(this, item[1])}
-                                    >
-                                        Add to Rent List
+                    <h1>Rent these houses below!</h1>
+                        <tbody>
+                            {this.state.items.map((item, index) => (
+                                <tr key={index}>
+                                    <td className="text-left">{item[0]}</td>
+                                    <td className="text-left">{item[2]}</td>
+                                    <td className="text-left">{item[3]}</td>
+                                    <td className="text-right">
+                                        <button
+                                            className="btn btn-info mr-1"
+                                            disabled={this.state.editDisabled}
+                                            onClick={this.onEdit.bind(this, item[1])}
+                                        >
+                                            Add to Rent List
+                                        </button>
+                                        <button
+                                        className="btn btn-primary"
+                                        onClick={this.onUpdate.bind(this)}>
+                                        Rent
                                     </button>
-                                    <button
-                                    className="btn btn-primary"
-                                    onClick={this.onUpdate.bind(this)}>
-                                    Rent
-                                </button>
-                                
-                                </td>
-                            </tr>
-                        ))}
-                    </tbody>
-                </table>
+                                    
+                                    </td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
+            </div>
             </div>
         )
     }

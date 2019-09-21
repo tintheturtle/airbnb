@@ -20,5 +20,10 @@
     background-color: plum;
     background-image: url(./background-images/street.jpeg);
     padding-top: 20%;
-    padding-bottom: 20%
+    padding-bottom: 20%;
+    text-align: center
+ }
+
+ #bootstrap #tron-two #jumbotron-container-two {
+     text-align: center
  }

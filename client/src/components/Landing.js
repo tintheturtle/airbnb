@@ -55,8 +55,8 @@ class Landing extends Component {
                 </div>
                 <div id="container-two">
                     <Jumbotron fluid id="tron-two">
-                        <Container>
-                            <h1>Welcome to GasBnB</h1>
+                        <Container className="jumbotron-container-two">
+                            <h1>Endless opportunities</h1>
                             <p>
                                 Explore what this website has to offer!
                             </p>
