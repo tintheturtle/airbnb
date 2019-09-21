@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { register_host } from './UserFunction'
 
+import './styles/HostRegistration.css'
+
 class RegisterHost extends Component {
     constructor() {
         super()
@@ -40,7 +42,7 @@ class RegisterHost extends Component {
 
     render () {
         return (
-            <div className="container">
+            <div className="container-host" id="bootstrap">
                 <div className="row">
                     <div className="col-md-6 mt-5 mx-auto">
                         <form noValidate={true} onSubmit={this.onSubmit}>
