@@ -1,0 +1,20 @@
+#bootstrap .jumbo-outside   {
+    background-image: url(./background-images/city-one.jpg);
+    height: 30%
+}
+
+.first {
+    height: 30%
+}
+
+#bootstrap #tron .jumbotron {
+    height: 30%
+}
+
+.second {
+    padding: 5% 10% 10% 20%
+}
+
+.containers {
+    padding: 0
+}

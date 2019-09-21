@@ -2,7 +2,6 @@ import React, {Component } from 'react'
 
 import {Jumbotron, Card, Button, CardDeck, Container} from 'react-bootstrap'
 
-import Footer from './Footer'
 import './styles/Landing.css'
 
 class Landing extends Component {
@@ -30,7 +29,6 @@ class Landing extends Component {
                                     Experience some of the best activities the world has to offer and make some lasting 
                                     memories.
                                     </Card.Text>
-                                    <Button variant="primary">Go somewhere</Button>
                                 </Card.Body>
                             </Card>
                             <Card style={{ width: '18rem' }}>
@@ -40,7 +38,6 @@ class Landing extends Component {
                                     Sample some of the world's finest cuisine as a college student, either at your local
                                     McDonald's or Late Nite at Warren.
                                     </Card.Text>
-                                    <Button variant="primary">Go somewhere</Button>
                                 </Card.Body>
                             </Card>
                             <Card style={{ width: '18rem' }}>
@@ -50,7 +47,6 @@ class Landing extends Component {
                                     Explore west campus to find too many people going to parties or east campus to find 
                                     a stampede or Red Sox
                                     </Card.Text>
-                                    <Button variant="primary">Go somewhere</Button>
                                 </Card.Body>
                             </Card>
                             
@@ -77,7 +73,6 @@ class Landing extends Component {
                                     Experience some of the best activities the world has to offer and make some lasting 
                                     memories.
                                     </Card.Text>
-                                    <Button variant="primary">Go somewhere</Button>
                                 </Card.Body>
                             </Card>
                             <Card style={{ width: '18rem' }}>
@@ -87,7 +82,6 @@ class Landing extends Component {
                                     Sample some of the world's finest cuisine as a college student, either at your local
                                     McDonald's or Late Nite at Warren.
                                     </Card.Text>
-                                    <Button variant="primary">Go somewhere</Button>
                                 </Card.Body>
                             </Card>
                             <Card style={{ width: '18rem' }}>
@@ -97,14 +91,12 @@ class Landing extends Component {
                                     Explore west campus to find too many people going to parties or east campus to find 
                                     a stampede or Red Sox
                                     </Card.Text>
-                                    <Button variant="primary">Go somewhere</Button>
                                 </Card.Body>
                             </Card>
                             
                         </CardDeck>
                     </div>
                 </div>
-                <Footer/>
         </div>
         )
     }

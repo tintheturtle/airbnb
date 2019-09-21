@@ -11,6 +11,7 @@ import ProfileHost from './components/ProfileHost'
 import LoginHost from './components/LoginHost'
 import List from './components/List'
 import Checkout from './components/Checkout'
+import Footer from './components/Footer'
 
 class App extends Component {
   render() {
@@ -19,7 +20,6 @@ class App extends Component {
         <div className="App">
           <NavBar/>
           <Route exact path="/" component={Landing}/>
-          <div className="container">
           <Route exact path="/register" component={Register}/>
           <Route exact path="/register_host" component={RegisterHost}/>
           <Route exact path="/login" component={Login}/>
@@ -28,7 +28,7 @@ class App extends Component {
           <Route exact path="/profile_host" component={ProfileHost}/>
           <Route exact path="/tasks" component={List}/>
           <Route exact path="/checkout" component={Checkout}/>
-          </div>
+          <Footer/>
 
           
         </div>
