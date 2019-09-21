@@ -29,6 +29,8 @@ class App extends Component {
           <Route exact path="/tasks" component={List}/>
           <Route exact path="/checkout" component={Checkout}/>
           </div>
+
+          
         </div>
       </Router>
     );

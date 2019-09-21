@@ -1,0 +1,24 @@
+#bootstrap #tron {
+   background-color: plum;
+   background-image: url(./background-images/city-one.jpg);
+   padding-top: 20%;
+   padding-bottom: 20%
+}
+
+#bootstrap #container-two{
+    background-color: plum;
+    color: white;
+}
+
+#bootstrap-overrides .deck-container {
+    margin-top: 100px;
+    padding-bottom: 20%
+}
+
+
+#bootstrap #tron-two {
+    background-color: plum;
+    background-image: url(./background-images/street.jpeg);
+    padding-top: 20%;
+    padding-bottom: 20%
+ }

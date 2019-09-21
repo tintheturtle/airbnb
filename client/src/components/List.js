@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { getList, addToList, deleteItem } from './ListFunctions'
+import { getList, addToList } from './ListFunctions'
 import { updateItem} from './UserFunction'
 import  jwt_decode from 'jwt-decode'
 
@@ -80,8 +80,6 @@ class List extends Component {
             guest_email: jwt_decode(localStorage.usertoken).identity.email,
             is_rented: false
         })
-        console.log(jwt_decode(localStorage.usertoken).identity.email)
-        console.log(itemid)
     }
 
 

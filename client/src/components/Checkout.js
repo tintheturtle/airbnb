@@ -89,6 +89,8 @@ class Checkout extends Component {
                         {this.state.items.map((item, index) => (
                             <tr key={index}>
                                 <td className="text-left">{item[0]}</td>
+                                <td className="text-left">{item[2]}</td>
+                                <td className="text-left">{item[3]}</td>
                                 <td className="text-right">
                                     <button
                                         className="btn btn-info mr-1"

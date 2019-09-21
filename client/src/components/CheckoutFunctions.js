@@ -13,7 +13,7 @@ export const getList = () => {
             var data = []
             Object.keys(res.data).forEach(function (key) {
                 var val = res.data[key]
-                data.push([val.house_name, val._id])
+                data.push([val.house_name, val._id, val.house_type, val.email])
             })
 
             return data
