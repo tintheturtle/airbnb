@@ -25,7 +25,6 @@ class Checkout extends Component {
         this.setState({
             guest_email: jwt_decode(localStorage.usertoken).identity.email,
         })
-        console.log(this.state.guest_email)
         this.getAll()
     }
 
@@ -84,7 +83,7 @@ class Checkout extends Component {
     render () {
         return (
             <div className="col-md-12">
-                <h1 className="listings-title">Checking Out?</h1> 
+                <h1 className="listings-title">Properties Rented</h1> 
                 <table className="table">
                     <tbody>
                         {this.state.items.map((item, index) => (

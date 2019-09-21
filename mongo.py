@@ -185,7 +185,7 @@ def update_task(id):
 
 #Queries for check out page
 
-#Gets all rented properties
+#Gets all rented properties that are rented by the logged in user
 @app.route('/checkout', methods=['GET'])
 def get_all_rented():
     tasks = mongo.db.houses

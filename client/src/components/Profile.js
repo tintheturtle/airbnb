@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import jwt_decode from 'jwt-decode'
 import { checkoutItem } from './UserFunction'
+import Checkout from './Checkout'
 
 class Profile extends Component {
     constructor() {
@@ -19,7 +20,8 @@ class Profile extends Component {
         this.setState({
             first_name: decoded.identity.first_name,
             last_name: decoded.identity.last_name,
-            email: decoded.identity.email
+            email: decoded.identity.email,
+            guest_email: jwt_decode(localStorage.usertoken).identity.email,
         })
     }
 
@@ -60,15 +62,12 @@ class Profile extends Component {
                             <tr>
                                 <td>Email</td>
                                 <td>{this.state.email}</td>
-                            </tr>
-                            <tr>
-                                <td>Properties Rented</td>
-                                <td>{this.state.rented}</td>
-                            </tr>
-                            
-                        </tbody>
+                            </tr>                       
+                        </tbody> 
                     </table>
                 </div>
+                <Checkout/>
+
             </div>
         )
     }

@@ -3,10 +3,11 @@ import React, {Component } from 'react'
 class Landing extends Component {
     render() {
         return(
+           
             <div className="container">
                 <div className="jumbotron mt-5">
                     <div className="col-sm-8 mx-auto">
-                        <h1 className="test-center">WELCOME</h1>
+                        <h1 className="text-center">Welcome to GasBnB</h1>
                     </div>
                 </div>
             </div>

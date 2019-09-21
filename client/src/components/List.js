@@ -69,7 +69,7 @@ class List extends Component {
         updateItem(this.state.id).then(() => {
             this.getAll()
         })
-        this.props.history.push('/checkout')
+        this.props.history.push('/profile')
 
     }
 
@@ -84,20 +84,6 @@ class List extends Component {
         console.log(itemid)
     }
 
-    onDelete = (val, e) => {
-        e.preventDefault()
-        deleteItem(val)
-
-        var data = [...this.state.items]
-        data.filter((item, index) => {
-            if (item[1] === val) {
-                data.splice(index, 1)
-            }
-            return true
-        })
-        this.setState({ items: [...data] })
-    }
-
 
 
     render () {
@@ -109,8 +95,8 @@ class List extends Component {
                         {this.state.items.map((item, index) => (
                             <tr key={index}>
                                 <td className="text-left">{item[0]}</td>
-                                <td className="text-left">{item[1]}</td>
                                 <td className="text-left">{item[2]}</td>
+                                <td className="text-left">{item[3]}</td>
                                 <td className="text-right">
                                     <button
                                         className="btn btn-info mr-1"
