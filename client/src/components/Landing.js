@@ -1,6 +1,6 @@
 import React, {Component } from 'react'
 
-import {Jumbotron, Card, Button, CardDeck, Container} from 'react-bootstrap'
+import {Jumbotron, Card, CardDeck, Container} from 'react-bootstrap'
 
 import './styles/Landing.css'
 

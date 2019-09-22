@@ -217,3 +217,20 @@ def update_status(id):
 # Must always be at the bottom
 if __name__ == '__main__':
     app.run(debug=True)
+
+
+#----------#----------#----------#----------#----------#----------#----------#----------#----------#----------#----------#----------
+
+
+@app.route('/profile', methods=['GET'])
+def get_all_owned():
+    tasks = mongo.db.houses
+
+    host_email = request.args.get('host_email','')
+
+    result = []
+
+    for field in tasks.find({'email': host_email}):
+        result.append({'_id': str(field['_id']), 'house_name': field['house_name']})
+    return jsonify(result)
+

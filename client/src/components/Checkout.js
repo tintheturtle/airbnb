@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { getList, addToList, deleteItem } from './CheckoutFunctions'
+import { getList, addToList } from './CheckoutFunctions'
 import { updateItem} from './CheckoutFunctions'
 
 import jwt_decode from 'jwt-decode'
@@ -43,7 +43,6 @@ class Checkout extends Component {
                     items: [...data]
                 },
                 () => {
-                    console.log(this.state.term)
                     console.log(this.state.guest_email)
                 }
             )

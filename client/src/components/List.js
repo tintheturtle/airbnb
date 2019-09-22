@@ -101,8 +101,14 @@ class List extends Component {
             </div>
             <div className="listing-section">
                 <table className="table">
-                    <h1>Rent these houses below!</h1>
+                    <h1>Rent these properties below!</h1>
                         <tbody>
+                            <tr>
+                                <td>Property Name</td>
+                                <td>Host Email</td>
+                                <td>Type</td>
+                                <td>Click to Rent!</td>
+                            </tr>
                             {this.state.items.map((item, index) => (
                                 <tr key={index}>
                                     <td className="text-left">{item[0]}</td>

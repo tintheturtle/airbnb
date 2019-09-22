@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import jwt_decode from 'jwt-decode'
 import { checkoutItem } from './UserFunction'
 import Checkout from './Checkout'
+import PropOwned from './PropOwned'
 import './styles/Profile.css'
 
 import {Jumbotron, Container} from 'react-bootstrap'
@@ -76,6 +77,7 @@ class Profile extends Component {
                     </div>
                     <div className="second">
                         <Checkout/>
+                        <PropOwned/>
                     </div>
                 
             </div>
