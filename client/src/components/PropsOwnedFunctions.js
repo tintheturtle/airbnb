@@ -19,3 +19,16 @@ export const getList = () => {
             return data
         })
 }
+
+export const deleteItem = term => {
+    axios
+        .delete(`/profile/${term}`, {
+            headers: { 'Content-type': 'application/json' }
+        })
+        .then((response) => {
+            console.log(response)
+        })
+        .catch((response) => {
+            console.log(response)
+        })
+}
