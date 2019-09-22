@@ -1,5 +1,6 @@
-#bootstrap .jumbo-outside   {
+#bootstrap .first #tron   {
     background-image: url(./background-images/city-one.jpg);
+    background-size: cover;
     height: 30%
 }
 

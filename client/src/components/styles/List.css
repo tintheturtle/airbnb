@@ -1,4 +1,24 @@
- .listings-title { 
+#availability-header {
+    color: black
+}
+
+#availability-subtitle {
+    color: black
+}
+
+#bootstrap #container-two #tron-five {
+    background-image: url(./background-images/sandy.jpg);
+    background-size: cover;
+}
+
+#bootstrap #container-two #tron .availability-prop {
+    background-image: url(./background-images/city-one.jpg);
+    padding-top: 20%;
+    padding-bottom: 20%
+ }
+ 
+
+.listings-title { 
     padding-top: 50px
 }
 

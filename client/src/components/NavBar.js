@@ -2,6 +2,11 @@
 import React, { Component } from 'react'
 import { Link, withRouter } from 'react-router-dom'
 
+import './styles/NavBar.css'
+
+import atom from './styles/background-images/logo192.png'
+
+
 class Navbar extends Component {
     logOut (e) {
         e.preventDefault()
@@ -39,7 +44,7 @@ class Navbar extends Component {
                 </li>
                 <li className="nav-item">
                     <Link to="/tasks" className="nav-link">
-                        House Listings
+                        Property Listings
                     </Link>
                 </li>
                 <li className="nav-item">
@@ -65,6 +70,7 @@ class Navbar extends Component {
 
                 <div className="collapse navbar-collapse justify-content-md-center"
                     id="navbar1">
+                    <img id="atom" src={atom}/>
                     <ul className="navbar-nav">
                         <li className="nav-item">
                             <Link to="/" className="nav-link">

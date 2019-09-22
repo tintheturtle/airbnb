@@ -88,12 +88,12 @@ class List extends Component {
 
     render () {
         return (
-            <div id="bootstrap" className="list-section col-md-12">
+            <div id="bootstrap" >
                 <div id="container-two">
-                    <Jumbotron fluid id="tron">
+                    <Jumbotron fluid id="tron" className="availability-prop">
                         <Container>
-                            <h1>Available Properties</h1>
-                            <p>
+                            <h1 id="availability-header">Available Properties</h1>
+                            <p id="availability-subtitle">
                                 Explore what properties are available for rent!
                             </p>
                         </Container>
